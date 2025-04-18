@@ -3,11 +3,19 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.poopoo"
     compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.poopoo"
+=======
+    namespace = "com.example.stat"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.example.stat"
+>>>>>>> 5cfd000 (start commit)
         minSdk = 21
         targetSdk = 35
         versionCode = 1

@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">poopoo</string>
+=======
+    <string name="app_name">stat</string>
+>>>>>>> 5cfd000 (start commit)
 </resources>

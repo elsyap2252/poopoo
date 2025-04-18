@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -17,3 +18,108 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statistic"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"/>
+
+            <!-- Filter Tabs: W, M, 6M, Y -->
+            <RadioGroup
+                android:id="@+id/radioGroupFilters"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day"
+                    android:checked="true"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Week" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Month"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year"/>
+            </RadioGroup>
+
+            <!-- Grafik: Time of Day -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time of Day"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Dummy grafik batang -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:src="@drawable/img"
+                android:elevation="6dp"
+                android:scaleType="fitXY"
+                android:background="#F0F0F0"
+                android:contentDescription="Time of Day Chart"/>
+
+            <!-- Grafik: Bristol Stool Type -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bristol Stool Type"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Dummy grafik donat -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:src="@drawable/img_1"
+                android:elevation="6dp"
+                android:scaleType="fitXY"
+                android:background="#F0F0F0"
+                android:contentDescription="Stool Type Chart"/>
+        </LinearLayout>
+    </ScrollView>
+    <!-- Navbar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#DDD"
+        android:layout_gravity="bottom"/>
+</LinearLayout>
+>>>>>>> 5cfd000 (start commit)
