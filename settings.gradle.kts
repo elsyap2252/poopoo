@@ -19,6 +19,10 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "poopoo"
+=======
+rootProject.name = "stat"
+>>>>>>> 5cfd000 (start commit)
 include(":app")
  

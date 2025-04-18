@@ -10,12 +10,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.Poopoo"
         tools:targetApi="31">
         <activity
             android:name=".AlarmActivity"
             android:exported="false" />
         <activity
+=======
+        android:theme="@style/Theme.Stat"
+        tools:targetApi="31">
+        <activity
+>>>>>>> 5cfd000 (start commit)
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
