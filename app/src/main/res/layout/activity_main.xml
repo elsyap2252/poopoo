@@ -18,19 +18,13 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:background="#E78FD1"
+
             android:padding="12dp"
             android:textColor="#000000" />
-
-        <!-- Kalender -->
-        <TextView
-            android:id="@+id/monthYearText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="April, 2025"
-            android:textColor="#007BFF"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="12dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000" />
 
         <!-- Barisan tanggal -->
         <HorizontalScrollView
@@ -48,20 +42,81 @@
             </LinearLayout>
         </HorizontalScrollView>
 
+        <!-- Hari -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/datePickerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/dayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/monthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
         <!-- Waktu -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Time"
             android:textStyle="bold"
-            android:layout_marginTop="16dp" />
+            android:textSize="18dp"
+            android:layout_marginTop="16dp"
+            />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/timePickerLayout"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginTop="8dp">
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <TextView
                 android:id="@+id/hourText"
@@ -96,7 +151,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Poo details"
+            android:textSize="18dp"
+            android:text="POO DETAILS"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
 
@@ -106,6 +162,7 @@
             android:layout_height="wrap_content"
             android:text="Shape"
             android:layout_marginTop="12dp"
+            android:textSize="16dp"
             android:textStyle="bold" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -172,6 +229,7 @@
             android:layout_height="wrap_content"
             android:text="Color"
             android:layout_marginTop="12dp"
+            android:textSize="16dp"
             android:textStyle="bold" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -181,26 +239,31 @@
             android:layout_marginTop="8dp">
             <!-- Contoh lingkaran warna -->
             <View
+                android:id="@+id/colorYellow"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/color_circle_yellow" />
             <View
+                android:id="@+id/colorBrown"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/color_circle_brown" />
             <View
+                android:id="@+id/colorRed"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/color_circle_red" />
             <View
+                android:id="@+id/colorBlack"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_margin="4dp"
                 android:background="@drawable/color_circle_black" />
             <View
+                android:id="@+id/colorGreen"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_margin="4dp"
@@ -214,6 +277,7 @@
             android:layout_height="wrap_content"
             android:text="Size"
             android:layout_marginTop="12dp"
+            android:textSize="16dp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -224,26 +288,31 @@
 
             <!-- Contoh ukuran (kotak gradasi ukuran) -->
             <View
+                android:id="@+id/size1"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_margin="4dp"
                 android:background="#CCCCCC" />
             <View
+                android:id="@+id/size2"
                 android:layout_width="23dp"
                 android:layout_height="23dp"
                 android:layout_margin="4dp"
                 android:background="#CCCCCC" />
             <View
+                android:id="@+id/size3"
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="4dp"
                 android:background="#CCCCCC" />
             <View
+                android:id="@+id/size4"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:layout_margin="4dp"
                 android:background="#CCCCCC" />
             <View
+                android:id="@+id/size5"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_margin="4dp"
@@ -264,23 +333,19 @@
             android:id="@+id/notesEditText"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="16dp"
             android:background="#DDD"
             android:gravity="top"
-            android:hint="Notes"
             android:inputType="textMultiLine"
             android:padding="8dp" />
 
         <Button
-            android:id="@+id/saveButton"
+            android:id="@+id/btnSavePoo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="save"
-            android:textSize="20dp"
-            android:layout_marginTop="16dp"
-            android:background="#E78FD1"
-            android:textColor="#000000"
-            android:padding="12dp" />
+            android:text="SAVE POO"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"/>
+
 
     </LinearLayout>
 </ScrollView>
