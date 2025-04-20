@@ -53,12 +53,11 @@
             </LinearLayout>
 
             <!-- Jam spinner -->
-            <View
+            <ImageView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:layout_marginTop="16dp"
-                android:layout_gravity="center_horizontal"
-                android:background="#DDD"/>
+                android:src="@drawable/clock"
+                android:layout_gravity="center"/>
 
             <!-- Picker hari -->
             <LinearLayout
