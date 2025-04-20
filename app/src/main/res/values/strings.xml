@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 <resources>
     <string name="app_name">poopoo</string>
+=======
+<resources>
+    <string name="app_name">Onboarding</string>
+>>>>>>> onboarding
 </resources>
